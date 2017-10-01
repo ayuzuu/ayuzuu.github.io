@@ -11,3 +11,4 @@ if (input == password) {
   window.alert('キャンセルされました')
   location.href = '/'
 }
+
