@@ -268,6 +268,14 @@ figure {
   color: #fff;
 }
 
+.sf-menu li.active-black {
+  border-bottom: 3px solid black;
+}
+.sf-menu li.active-black a:hover, .sf-menu li.active-black a:focus {
+  color: black;
+}
+
+
 .sf-menu li,
 .sf-menu ul li,
 .sf-menu ul ul li,
@@ -352,6 +360,14 @@ figure {
   float: left;
   width: 100%;
 }
+
+.nav-header-2 {
+  border-bottom: 1px solid gray;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
 
 #fh5co-logo {
   position: relative;
