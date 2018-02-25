@@ -1,14 +1,23 @@
-const password = "ayusawa12";
-input = window.prompt('パスワードを入力してください', '')
+// 簡易ログイン
+const password = 'ayusawa'
+var input = ''
+var isLogin = localStorage.getItem('isLogin')
+console.log(input)
 
-// 入力内容が tama の場合は example_tama.html にジャンプ
-if (input == password) {
-//   location.href = '/'
-} else if (input != '' && input != null) {
+if (isLogin != 1) {
+  console.log('入力ボックス')
+  input = window.prompt('パスワードを入力してください', '')
+
+  if (input == password) {
+    // location.href = '/'
+    localStorage.setItem('isLogin', 1)
+  } else if (input != '' && input != null) {
     window.alert('パスワードが違います')
     location.href = '/'
-}else {
-  window.alert('キャンセルされました')
-  location.href = '/'
+    localStorage.setItem('isLogin', 0)
+  } else {
+    window.alert('キャンセルされました')
+    location.href = '/'
+    localStorage.setItem('isLogin', 0)
+  }  
 }
-
